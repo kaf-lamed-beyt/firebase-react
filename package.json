@@ -1,0 +1,21 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "firebase react enabled store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -mode production"
+  },
+  "keywords": [
+    "firebase",
+    "react",
+    "state-management",
+    "auth"
+  ],
+  "author": "Caleb Olojo",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  }
+}
