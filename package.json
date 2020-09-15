@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -mode production"
+    "build": "webpack -mode production --out-dir build"
   },
   "keywords": [
     "firebase",
@@ -16,6 +16,13 @@
   "author": "Caleb Olojo",
   "license": "ISC",
   "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
