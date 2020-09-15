@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config ./webpack.config.js --mode production"
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "start": "webpack-dev-server --open --mode development",
+    "format": "prettier --write \"**/*.{scss,jsx,js,html,css}\""
   },
   "keywords": [
     "firebase",
@@ -26,6 +28,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "prettier": "^2.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
