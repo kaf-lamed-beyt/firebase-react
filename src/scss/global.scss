@@ -1,16 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: ghostwhite;
+  background: ghostwhite;
 }
 
-.app__base {
-    border: 1px solid red;
-    h1 {
-        text-align: center;
-    }
+h1 {
+  text-align: center;
+  border: 1px solid red;
 }

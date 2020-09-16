@@ -1,13 +1,16 @@
 import React from 'react'
+import Navigation from './Navigation'
 
-class App extends React.Component {
-  render() {
+const App = () => {
     return (
       <div className="app__base">
-        <h1>Trying out babel</h1>
+        <h1>App base</h1>
+        <Navigation />
+
+        <h2>Please</h2>
+        <hr />
       </div>
     )
-  }
 }
 
 export default App

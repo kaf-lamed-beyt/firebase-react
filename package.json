@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config ./webpack.config.js --mode production",
     "dev": "webpack-dev-server --open --mode development",
-    "format": "prettier --write \"**/*.{scss,jsx,js,html,css}\""
+    "format": "prettier --write \"src/**/*.{scss,jsx,js,html,css}\""
   },
   "keywords": [
     "firebase",
