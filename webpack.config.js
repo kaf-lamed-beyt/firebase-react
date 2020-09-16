@@ -1,6 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require("path")
 
 module.exports = {
+  output: {
+    path: path.resolve(__dirname, "build")
+  },
   module: {
     rules: [
       {
@@ -19,10 +23,11 @@ module.exports = {
         ],
       },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.scss$/,
         use: [
-          "sass-loader",
-          "css-loader"
+          "style-loader",
+          "css-loader",
+          "sass-loader"
         ]
       }
     ],
