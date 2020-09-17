@@ -5,7 +5,11 @@ import * as Route from '../Routes/routes'
 
 const Navigation = () => {
   return (
-    <div>
+    <header className="nav__base">
+      <div className="brand">
+    <h1>Logo</h1>
+      </div>
+      <nav>
       <ul>
         <li>
           <Link to={Route.login}>Sign In</Link>
@@ -23,7 +27,8 @@ const Navigation = () => {
           <Link to={Route.admin}>Admin</Link>
         </li>
       </ul>
-    </div>
+      </nav>
+    </header>
   )
 }
 

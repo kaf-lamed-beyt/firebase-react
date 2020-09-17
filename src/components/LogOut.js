@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Logout() {
   return (
-    <div>
+    <div className="logout__base">
       <h1>Logout</h1>
     </div>
   )
