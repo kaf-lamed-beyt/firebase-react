@@ -1,4 +1,5 @@
 import React from 'react'
+import InputField from './InputField'
 import Input from './Input'
 
 export default function Login() {
@@ -6,8 +7,6 @@ export default function Login() {
 
   const handleChange = event => {
     setInput(event.target.value)
-
-
   }
 
   return (
@@ -15,22 +14,15 @@ export default function Login() {
       <h1>Login</h1>
       <div className="form-base">
         <form>
-          <label htmlFor="name">Name</label>
-          <Input
-            type="text"
-            name="name"
-            id="name"
-            value={input}
-            event={handleChange}
-          />
-          <label htmlFor="email">Email</label>
-          <Input
-            type="email"
-            name="email"
-            id="email"
-            value={input}
-            event={handleChange}
-          />
+
+            <Input
+              type="text"
+              name="name"
+              id="name"
+              value={input}
+              event={handleChange}
+            />
+
         </form>
       </div>
     </div>

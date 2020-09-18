@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+// FormControl component starts here
+.form__control {
+  height: 40px;
+  width: 100%;
+  border: $debug;
+}
+
+// FormControl component ends here.
+
+// Input component starts here

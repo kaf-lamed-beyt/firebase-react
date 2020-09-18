@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Navigation from './Navigation'
-import LandingPage from './Welcome'
+import Index from '../pages/index'
 import SignUpPage from './Signup'
 import SignInPage from './LogIn'
 import UserProfile from './User'
@@ -17,16 +17,15 @@ class App extends React.Component {
     return (
       <Router>
         <div className="app__base">
-          <hr />
+          <Navigation />
           {/* routes */}
-          <Route exact path={Routes.landing} component={LandingPage} />
+          <Route exact path={Routes.landing} component={Index} />
           <Route path={Routes.signup} component={SignUpPage} />
           <Route path={Routes.login} component={SignInPage} />
           <Route path={Routes.profile} component={UserProfile} />
           <Route path={Routes.home} component={Home} />
           <Route path={Routes.forgotPassword} component={ForgotPassword} />
           <Route path={Routes.admin} component={Admin} />
-          <Navigation />
         </div>
       </Router>
     )
