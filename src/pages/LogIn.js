@@ -31,7 +31,7 @@ export default function Login() {
             default_text="password"
           />
         </form>
-        <LoginBtn className="btn" color="" />
+        <LoginBtn className="btn" color="rgb(2, 10, 85)" />
       </div>
     </div>
   )
