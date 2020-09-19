@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from '../components/Input'
+import { LoginBtn } from '../components/Buttons'
 
 export default function Login() {
   const [input, setInput] = React.useState('')
@@ -30,6 +31,7 @@ export default function Login() {
             default_text="password"
           />
         </form>
+        <LoginBtn className="btn" color="" />
       </div>
     </div>
   )

@@ -1,5 +1,14 @@
-.form__control {
+@import '../variables.scss';
+
+.input {
+  .form__control {
     height: 40px;
     width: 300px;
     margin: 15px;
+    padding: 10px;
+
+    &::placeholder {
+      font-size: $sm;
+    }
+  }
 }

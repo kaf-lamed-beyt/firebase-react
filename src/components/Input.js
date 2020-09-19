@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Input = ({ type, name, id, event, default_text }) => {
   return (
     <div className="input">

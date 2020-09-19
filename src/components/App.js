@@ -25,10 +25,7 @@ class App extends React.Component {
             <Route path={Routes.login} component={SignInPage} />
             <Route path={Routes.profile} component={UserProfile} />
             <Route path={Routes.home} component={Home} />
-            <Route
-              path={Routes.forgotPassword}
-              component={ForgotPassword}
-            />
+            <Route path={Routes.forgotPassword} component={ForgotPassword} />
             <Route path={Routes.admin} component={Admin} />
           </Switch>
         </div>
