@@ -4,6 +4,8 @@ const path = require('path')
 module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
+    filename: 'index.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -27,6 +29,9 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true
   },
   plugins: [
     new HtmlWebpackPlugin({
