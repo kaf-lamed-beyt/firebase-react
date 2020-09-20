@@ -1,25 +1,10 @@
 import React from 'react'
 
-export const LoginBtn = ({ className, color }) => {
+export const Button = ({ className, color, children }) => {
   return (
     <button className={className} style={{ background: color }}>
-      Login
+      {children}
     </button>
   )
 }
 
-export const SignUpBtn = ({ className, color }) => {
-  return (
-    <button className={className} style={{ background: color }}>
-      Sign Up
-    </button>
-  )
-}
-
-export const UpdateProfileBtn = ({ className, color }) => {
-  return (
-    <button className={className} style={{ background: color }}>
-      Update
-    </button>
-  )
-}

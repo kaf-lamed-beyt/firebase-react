@@ -1,6 +1,6 @@
 import React from 'react'
 import Input from '../components/Input'
-import { LoginBtn } from '../components/Buttons'
+import { Button } from '../components/Buttons'
 
 export default function Login() {
   const [input, setInput] = React.useState('')
@@ -11,9 +11,9 @@ export default function Login() {
 
   return (
     <div className="login__base">
-      <h1>Login</h1>
       <div className="form__base">
-        <form className="login form">
+      <h2 className="form__title">Login</h2>
+        <form className="login form" action="">
           <Input
             type="email"
             name="email"
@@ -31,7 +31,7 @@ export default function Login() {
             default_text="password"
           />
          
-          <LoginBtn className="btn" color="rgb(2, 10, 85)" />
+          <Button className="btn" color="rgb(2, 10, 85)">Login</Button>
         </form>
       </div>
     </div>

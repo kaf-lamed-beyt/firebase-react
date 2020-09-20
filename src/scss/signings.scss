@@ -4,8 +4,11 @@
 .form__base {
   width: 550px;
   height: 400px;
+  margin: 0 auto;
+  margin-top: 9%;
 
-  .btn {
-    width: 80%;
+  .form__title {
+    font-size: $lg;
+    padding: 18px;
   }
 }
