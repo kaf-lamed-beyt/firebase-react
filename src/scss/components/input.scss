@@ -3,8 +3,9 @@
 .input {
   .form__control {
     height: 40px;
-    width: 300px;
+    width: 100%;
     margin: 15px;
+    align-content: center;
     padding: 10px;
 
     &::placeholder {

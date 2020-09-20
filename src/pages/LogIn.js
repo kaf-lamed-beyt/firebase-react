@@ -30,8 +30,8 @@ export default function Login() {
             event={handleChange}
             default_text="password"
           />
+          <LoginBtn className="btn" color="rgb(2, 10, 85)" />
         </form>
-        <LoginBtn className="btn" color="rgb(2, 10, 85)" />
       </div>
     </div>
   )
