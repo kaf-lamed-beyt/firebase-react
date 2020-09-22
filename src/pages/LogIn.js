@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from '../components/Input'
 import { Button } from '../components/Buttons'
+import { Link } from 'react-router-dom'
 
 import * as Routes from '../Routes/routes'
 
@@ -34,7 +35,7 @@ export default function Login() {
           />
           <Button className="btn login-btn">Login</Button>
           {/* alt signup text */}
-          <p>Don't have an account? <Link to={Routes.signup}>signup</Link></p>
+          <p className="alt-text">Don't have an account? <Link to={Routes.signup}>signup</Link></p>
         </form>
       </div>
     </div>
