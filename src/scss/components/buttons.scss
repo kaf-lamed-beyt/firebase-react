@@ -8,10 +8,14 @@
     color: #fff;
     font-size: $md;
     margin: 15px;
+}
 
+.login-btn {
+    background: $primary;
+    
     &:hover {
         cursor: pointer;
-        background: cornflowerblue;
-        transition: all .4s ease-in ;
+        background: rgb(4, 49, 133);
+        transition: all .4s ease-in;
     }
 }

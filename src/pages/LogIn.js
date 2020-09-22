@@ -2,6 +2,8 @@ import React from 'react'
 import Input from '../components/Input'
 import { Button } from '../components/Buttons'
 
+import * as Routes from '../Routes/routes'
+
 export default function Login() {
   const [input, setInput] = React.useState('')
 
@@ -30,8 +32,9 @@ export default function Login() {
             event={handleChange}
             default_text="password"
           />
-         
-          <Button className="btn" color="rgb(2, 10, 85)">Login</Button>
+          <Button className="btn login-btn">Login</Button>
+          {/* alt signup text */}
+          <p>Don't have an account? <Link to={Routes.signup}>signup</Link></p>
         </form>
       </div>
     </div>
