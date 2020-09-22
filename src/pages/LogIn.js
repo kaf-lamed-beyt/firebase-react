@@ -15,7 +15,7 @@ export default function Login() {
   return (
     <div className="login__base">
       <div className="form__base">
-      <h2 className="form__title">Login</h2>
+        <h2 className="form__title">Login</h2>
         <form className="login form" action="">
           <Input
             type="email"
@@ -35,7 +35,9 @@ export default function Login() {
           />
           <Button className="btn login-btn">Login</Button>
           {/* alt signup text */}
-          <p className="alt-text">Don't have an account? <Link to={Routes.signup}>signup</Link></p>
+          <p className="alt-text">
+            Don't have an account? <Link to={Routes.signup}>signup</Link>
+          </p>
         </form>
       </div>
     </div>

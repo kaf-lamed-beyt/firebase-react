@@ -6,9 +6,9 @@ import Input from '../components/Input'
 import * as Routes from '../Routes/routes'
 
 export default function SignUp() {
-  const [input, setInput] = React.useState("")
+  const [input, setInput] = React.useState('')
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     setInput(event.target.value)
   }
 
@@ -17,7 +17,7 @@ export default function SignUp() {
       <div className="form__base">
         <h2 className="form__title">Signup</h2>
         <form className="login form" action="">
-        <Input
+          <Input
             type="name"
             name="name"
             id="name"
@@ -41,7 +41,7 @@ export default function SignUp() {
             event={handleChange}
             default_text="password"
           />
-                    <Input
+          <Input
             type="password"
             name="password"
             id="pwd"
@@ -50,7 +50,9 @@ export default function SignUp() {
             default_text="password again"
           />
           <Button className="btn login-btn">Sign up</Button>
-          <p className="alt-text">Have an account already? <Link to={Routes.login}>sign in</Link></p>
+          <p className="alt-text">
+            Have an account already? <Link to={Routes.login}>sign in</Link>
+          </p>
         </form>
       </div>
     </div>

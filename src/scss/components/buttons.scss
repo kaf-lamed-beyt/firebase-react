@@ -1,21 +1,21 @@
 @import '../variables';
 
 .btn {
-    width: 438px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: $md;
-    margin: 15px;
+  width: 438px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: $md;
+  margin: 15px;
 }
 
 .login-btn {
-    background: $primary;
-    
-    &:hover {
-        cursor: pointer;
-        background: rgb(4, 49, 133);
-        transition: all .4s ease-in;
-    }
+  background: $primary;
+
+  &:hover {
+    cursor: pointer;
+    background: rgb(4, 49, 133);
+    transition: all 0.4s ease-in;
+  }
 }

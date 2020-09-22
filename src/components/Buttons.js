@@ -7,4 +7,3 @@ export const Button = ({ className, color, children }) => {
     </button>
   )
 }
-
