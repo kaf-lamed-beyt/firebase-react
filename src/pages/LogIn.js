@@ -33,12 +33,11 @@ export default function Login() {
             event={handleChange}
             default_text="password"
           />
-          <Button className="btn login-btn">Login</Button>
-          {/* alt signup text */}
-          <p className="alt-text">
-            Don't have an account? <Link to={Routes.signup}>signup</Link>
-          </p>
         </form>
+        <Button className="btn outline__primary">Login</Button>
+        <p className="alt-text">
+          Don't have an account? <Link to={Routes.signup}>signup</Link>
+        </p>
       </div>
     </div>
   )

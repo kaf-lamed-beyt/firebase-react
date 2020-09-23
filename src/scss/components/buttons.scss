@@ -10,12 +10,27 @@
   margin: 15px;
 }
 
-.login-btn {
+.outline__primary {
+  border: 2px solid $primary;
+  color: $primary;
+  background: #fff;
+
+  &:hover {
+    background: $primary;
+    color: $bg-primary;
+    transition: all .5s ease-in;
+    cursor: pointer;
+  }
+}
+
+.btn__primary {
   background: $primary;
 
   &:hover {
     cursor: pointer;
-    background: rgb(4, 49, 133);
+    background: $bg-primary;
+    color: $primary;
+    border: 2px solid $primary;
     transition: all 0.4s ease-in;
   }
 }

@@ -49,11 +49,11 @@ export default function SignUp() {
             event={handleChange}
             default_text="password again"
           />
-          <Button className="btn login-btn">Sign up</Button>
-          <p className="alt-text">
-            Have an account already? <Link to={Routes.login}>sign in</Link>
-          </p>
         </form>
+        <Button className="btn login-btn">Sign up</Button>
+        <p className="alt-text">
+          Have an account already? <Link to={Routes.login}>sign in</Link>
+        </p>
       </div>
     </div>
   )
