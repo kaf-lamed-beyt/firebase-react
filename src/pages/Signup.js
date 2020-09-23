@@ -50,9 +50,12 @@ export default function SignUp() {
             default_text="password again"
           />
         </form>
-        <Button className="btn login-btn">Sign up</Button>
+        <Button className="btn btn__primary">Sign up</Button>
         <p className="alt-text">
-          Have an account already? <Link to={Routes.login}>sign in</Link>
+          Have an account already?{' '}
+          <Link to={Routes.login} className="link">
+            sign in
+          </Link>
         </p>
       </div>
     </div>

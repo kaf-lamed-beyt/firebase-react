@@ -14,5 +14,10 @@
 
   .alt-text {
     padding: 17px;
+    color: $primary;
+
+    Link {
+      color: $primary;
+    }
   }
 }
