@@ -35,14 +35,14 @@ export default function Login() {
             default_text="password"
           />
         </form>
-        <Button className="btn outline__primary">Login</Button>
+        <Button className="btn btn-50 outline__primary">Login</Button>
         <p className="alt-text">
           Don't have an account? <Link to={Routes.signup}>signup</Link>
         </p>
         <p className="alt-text">login with facebook or google</p>
         <SocialAuth className="social__auth flex">
-          <Button className="btn facebook__btn">facebook</Button>
-          <Button className="btn google__btn">google</Button>
+          <Button className="btn btn-50 facebook__btn">facebook</Button>
+          <Button className="btn btn-50 google__btn">google</Button>
         </SocialAuth>
       </div>
     </div>

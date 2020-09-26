@@ -1,13 +1,33 @@
 @import '../variables';
 
 .btn {
-  width: 438px;
+  width: 120px;
   height: 40px;
   border: none;
   border-radius: 4px;
   color: #fff;
   font-size: $md;
   margin: 15px;
+}
+
+.btn-100 {
+  width: 100%;
+}
+
+.btn-75 {
+  width: 75%;
+}
+
+.btn-50 {
+  width: 50%;
+}
+
+.btn-60 {
+  width: 60%;
+}
+
+.btn-25 {
+  width: 25%;
 }
 
 .outline__primary {
