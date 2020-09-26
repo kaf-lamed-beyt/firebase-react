@@ -23,6 +23,7 @@
   }
 }
 
+// primary button
 .btn__primary {
   background: $primary;
 
@@ -33,4 +34,19 @@
     border: 2px solid $primary;
     transition: all 0.4s ease-in;
   }
+}
+
+// social buttons
+.facebook__btn {
+  background: $bg-primary;
+  color: $facebook-blue;
+
+  &:hover {
+    cursor: pointer;
+    background: $facebook-blue;
+    color: $bg-primary;
+    border: 2px solid $facebook-blue;
+    transition: all .4s ease-in;
+  }
+
 }
