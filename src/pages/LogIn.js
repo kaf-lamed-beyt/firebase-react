@@ -2,6 +2,7 @@ import React from 'react'
 import Input from '../components/Input'
 import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
+import SocialAuth from '../components/SocialAuth'
 
 import * as Routes from '../Routes/routes'
 
@@ -38,6 +39,11 @@ export default function Login() {
         <p className="alt-text">
           Don't have an account? <Link to={Routes.signup}>signup</Link>
         </p>
+        <p className="alt-text">login with facebook or google</p>
+        <SocialAuth className="social__auth flex">
+          <Button className="btn facebook__btn">facebook</Button>
+          <Button className="btn google__btn">google</Button>
+        </SocialAuth>
       </div>
     </div>
   )

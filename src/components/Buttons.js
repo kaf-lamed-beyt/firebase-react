@@ -9,7 +9,7 @@ export const Button = ({ className, color, children, event }) => {
   )
 }
 
-Button.PropTypes = {
+Button.propTypes = {
   // button label: the text that the button displays
   children: PropTypes.node.isRequired,
   // the color prop of the button
@@ -17,5 +17,5 @@ Button.PropTypes = {
   // element class for unique styling
   className: PropTypes.string,
   // click event for the button that gets called when it is clicked
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }

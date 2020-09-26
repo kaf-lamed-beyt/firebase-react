@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+// global util classes
+.flex {
+  display: flex;
+}
+
 body {
   background: $bg-primary;
 }

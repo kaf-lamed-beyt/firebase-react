@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const SocialAuth = ({ children }) => {
-  return <div className="social__signin">{children}</div>
+const SocialAuth = ({ children, className }) => {
+  return <div className={className}>{children}</div>
 }
 
-SocialAuth.PropTypes = {
-  children: PropTypes.children.isRequired
+SocialAuth.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 }
 
 export default SocialAuth

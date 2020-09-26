@@ -40,13 +40,25 @@
 .facebook__btn {
   background: $bg-primary;
   color: $facebook-blue;
+  border: 2px solid $facebook-blue;
 
   &:hover {
     cursor: pointer;
     background: $facebook-blue;
     color: $bg-primary;
-    border: 2px solid $facebook-blue;
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
   }
+}
 
+.google__btn {
+  background: $bg-primary;
+  color: $google;
+  border: 2px solid $google;
+
+  &:hover {
+    cursor: pointer;
+    background: $google;
+    color: $bg-primary;
+    transition: all 0.4s ease-in;
+  }
 }
