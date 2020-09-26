@@ -41,8 +41,8 @@ export default function Login() {
         </p>
         <p className="alt-text">login with facebook or google</p>
         <SocialAuth className="social__auth flex">
-          <Button className="btn btn-50 facebook__btn">facebook</Button>
-          <Button className="btn btn-50 google__btn">google</Button>
+          <Button className="btn btn-60 facebook__btn">facebook</Button>
+          <Button className="btn btn-60 google__btn">google</Button>
         </SocialAuth>
       </div>
     </div>
