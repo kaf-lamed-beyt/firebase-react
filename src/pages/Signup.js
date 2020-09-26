@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
 import Input from '../components/Input'
+import SocialAuth from '../components/SocialAuth'
 
 import * as Routes from '../Routes/routes'
 
@@ -50,13 +51,15 @@ export default function SignUp() {
             default_text="password again"
           />
         </form>
-        <Button className="btn btn__primary">Sign up</Button>
+        <Button className="btn btn-50 btn__primary">Sign up</Button>
         <p className="alt-text">
           Have an account already?{' '}
           <Link to={Routes.login} className="link">
             sign in
           </Link>
         </p>
+        <p className="alt-text">login with facebook or google</p>
+        <SocialAuth className="social__auth flex" />
       </div>
     </div>
   )

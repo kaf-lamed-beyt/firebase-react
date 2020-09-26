@@ -1,12 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button } from './Buttons'
 
-const SocialAuth = ({ children, className }) => {
-  return <div className={className}>{children}</div>
+const SocialAuth = ({ className }) => {
+  return (
+    <div className={className}>
+      <Button className="btn btn-60 facebook__btn">facebook</Button>
+      <Button className="btn btn-60 google__btn">google</Button>
+    </div>
+  )
 }
 
 SocialAuth.propTypes = {
-  children: PropTypes.node.isRequired,
   className: PropTypes.string,
 }
 
