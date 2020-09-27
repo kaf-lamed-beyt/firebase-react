@@ -7,7 +7,7 @@ const Navigation = () => {
   return (
     <header className="nav__base">
       <div className="brand">
-        <h1>Dodo Spree</h1>
+        <h1>Dodo</h1>
       </div>
       <nav>
         <ul>
