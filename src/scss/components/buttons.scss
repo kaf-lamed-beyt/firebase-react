@@ -12,22 +12,42 @@
 
 .btn-100 {
   width: 100%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .btn-75 {
   width: 75%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .btn-50 {
   width: 50%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .btn-60 {
   width: 60%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .btn-25 {
   width: 25%;
+
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .outline__primary {

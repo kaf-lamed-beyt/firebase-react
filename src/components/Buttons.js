@@ -17,5 +17,5 @@ Button.propTypes = {
   // element class for unique styling
   className: PropTypes.string,
   // click event for the button that gets called when it is clicked
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 }

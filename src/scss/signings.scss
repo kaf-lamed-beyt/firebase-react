@@ -1,27 +1,44 @@
 @import '../scss/variables.scss';
 
 // general utilis classese for all forms
-.form__base {
-  width: 470px;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 9%;
-
-  form {
+.base {
+  .form__base {
+    width: 470px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 9%;
     border: 1px solid $primary;
-  }
 
-  .form__title {
-    font-size: $lg;
-    padding: 18px;
-  }
-
-  .alt-text {
-    padding: 17px;
-    color: $primary;
-
-    Link {
+  
+    .form__title {
+      font-size: $lg;
+      padding: 18px;
+    }
+  
+    .alt-text {
+      padding: 17px;
       color: $primary;
+  
+      Link {
+        color: $primary;
+      }
     }
   }
+  
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+    margin: 7px;
+    border: $debug;
+    margin: 0 auto;
+
+    .base {
+      width: 100%;
+    }
+  }
+}
+
+
+
+.signup__base {
+  margin-top: -4%;
 }

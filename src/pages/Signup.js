@@ -12,15 +12,15 @@ export default function SignUp() {
   const handleChange = event => {
     setInput(event.target.value)
   }
-  
+
   const handleClick = () => {
-    let name = document.querySelector("#email")
+    let name = document.querySelector('#name')
     let email = name.value
     alert(`thank you ${email}`)
   }
 
   return (
-    <div className="signup__base">
+    <div className="signup__base base">
       <div className="form__base">
         <h2 className="form__title">Signup</h2>
         <form className="login form" action="">
@@ -57,14 +57,18 @@ export default function SignUp() {
             default_text="password again"
           />
         </form>
-        <Button className="btn btn-50 btn__primary" event={handleClick}>Sign up</Button>
-        <p className="alt-text">
-          Have an account already?{' '}
-          <Link to={Routes.login} className="link">
-            sign in
-          </Link>
-        </p>
-        <p className="alt-text">login with facebook or google</p>
+        <div className="flex alt">
+          <Button className="btn btn-25 outline__primary" event={handleClick}>
+            Sign up
+          </Button>
+          <p className="alt-text">
+            Have an account already?{' '}
+            <Link to={Routes.login} className="link">
+              sign in
+            </Link>
+          </p>
+        </div>
+        <p className="alt-text">Login with facebook or google</p>
         <SocialAuth className="social__auth flex" />
       </div>
     </div>

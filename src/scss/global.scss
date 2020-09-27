@@ -26,6 +26,7 @@ h1 {
 header {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 
   nav ul {
     display: flex;
@@ -34,6 +35,14 @@ header {
       margin: 20px;
       list-style-type: none;
       text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    justify-content: space-between;
+
+    nav ul {
+      display: none;
     }
   }
 }
