@@ -3,9 +3,13 @@
 // general utilis classese for all forms
 .form__base {
   width: 470px;
-  height: 400px;
+  height: 100%;
   margin: 0 auto;
   margin-top: 9%;
+
+  form {
+    border: 1px solid $primary;
+  }
 
   .form__title {
     font-size: $lg;

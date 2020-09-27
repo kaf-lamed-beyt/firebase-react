@@ -14,7 +14,7 @@ export default function Login() {
   }
 
   const handleClick = () => {
-    let name = document.querySelector('#email')
+    let name = document.querySelector("#email")
     let email = name.value
     alert(`thank you ${email}`)
   }
@@ -41,9 +41,7 @@ export default function Login() {
             default_text="password"
           />
         </form>
-        <Button className="btn btn-50 outline__primary" event={handleClick}>
-          Login
-        </Button>
+        <Button className="btn btn-50 outline__primary" event={handleClick}>Login</Button>
         <p className="alt-text">
           Don't have an account? <Link to={Routes.signup}>signup</Link>
         </p>

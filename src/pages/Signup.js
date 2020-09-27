@@ -12,6 +12,12 @@ export default function SignUp() {
   const handleChange = event => {
     setInput(event.target.value)
   }
+  
+  const handleClick = () => {
+    let name = document.querySelector("#email")
+    let email = name.value
+    alert(`thank you ${email}`)
+  }
 
   return (
     <div className="signup__base">
@@ -51,7 +57,7 @@ export default function SignUp() {
             default_text="password again"
           />
         </form>
-        <Button className="btn btn-50 btn__primary">Sign up</Button>
+        <Button className="btn btn-50 btn__primary" event={handleClick}>Sign up</Button>
         <p className="alt-text">
           Have an account already?{' '}
           <Link to={Routes.login} className="link">

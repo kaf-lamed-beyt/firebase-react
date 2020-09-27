@@ -1,11 +1,13 @@
 @import '../variables.scss';
 
 .input {
+  width: 430px;
+
   .form__control {
     height: 40px;
     width: 100%;
     margin: 15px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     border-top: none;
     border-left: none;
@@ -17,7 +19,7 @@
     box-shadow: 0.5px 2px 3px rgba(0, 0, 0, 0.25);
 
     &::placeholder {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
