@@ -13,6 +13,19 @@
   display: flex;
 }
 
+.fab {
+  font-size: $md;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-google {
+  color: red;
+}
+//
+
 body {
   background: $bg-primary;
 }

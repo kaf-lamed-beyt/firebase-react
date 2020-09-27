@@ -2,42 +2,47 @@
 
 // general utilis classese for all forms
 .base {
-
-
-.signup__base {
-  margin-top: -4%;
-}
+  margin-top: 5%;
 
   .form__base {
     width: 470px;
     height: 100%;
     margin: 0 auto;
-    margin-top: 9%;
     border: 1px solid $primary;
 
-  
     .form__title {
       font-size: $lg;
       padding: 18px;
+      color: $primary;
     }
-  
+
     .alt-text {
       padding: 17px;
+      margin-top: 2%;
       color: $primary;
-  
+
       Link {
         color: $primary;
       }
     }
   }
-  
+
   @media only screen and (max-width: 576px) {
-    width: 500px;
-    margin: 7px;
-    margin: 0 auto;
+    margin-top: 18%;
 
     .form__base {
-      width: 100%;
+      margin: 0 auto;
+      width: 400px;
+
+      .form {
+        width: 100%;
+      }
+
+      .alt-text {
+        margin-top: 0;
+        width: 600px;
+        font-size: $sm;
+      }
     }
   }
 }

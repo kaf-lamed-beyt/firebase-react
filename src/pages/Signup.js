@@ -20,10 +20,10 @@ export default function SignUp() {
   }
 
   return (
-    <div className="signup__base base">
+    <div className="base">
       <div className="form__base">
         <h2 className="form__title">Signup</h2>
-        <form className="login form" action="">
+        <form className="signup form" action="">
           <Input
             type="name"
             name="name"

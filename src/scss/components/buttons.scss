@@ -8,6 +8,13 @@
   color: #fff;
   font-size: $md;
   margin: 15px;
+  outline-color: $primary;
+
+  &:hover {
+    span {
+      color: $bg-primary;
+    }
+  }
 }
 
 .btn-100 {
