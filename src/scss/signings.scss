@@ -2,6 +2,12 @@
 
 // general utilis classese for all forms
 .base {
+
+
+.signup__base {
+  margin-top: -4%;
+}
+
   .form__base {
     width: 470px;
     height: 100%;
@@ -26,19 +32,12 @@
   }
   
   @media only screen and (max-width: 576px) {
-    width: 100%;
+    width: 500px;
     margin: 7px;
-    border: $debug;
     margin: 0 auto;
 
-    .base {
+    .form__base {
       width: 100%;
     }
   }
-}
-
-
-
-.signup__base {
-  margin-top: -4%;
 }
