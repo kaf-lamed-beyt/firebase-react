@@ -46,7 +46,10 @@ export default function Login() {
             Login
           </Button>
           <p className="alt-text">
-            Don't have an account? <Link to={Routes.signup}>signup</Link>
+            Don't have an account?{' '}
+            <Link to={Routes.signup} className="link__text__underline">
+              signup
+            </Link>
           </p>
         </div>
         <p className="alt-text">Login with facebook or google</p>

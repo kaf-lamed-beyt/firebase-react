@@ -8,14 +8,14 @@ const SocialAuth = ({ className }) => {
       <Button className="btn btn-60 facebook__btn">
         <span>
           <i className="fab fa-facebook-f"></i>
-        </span>{' '}
-        &nbsp; &nbsp; &nbsp; &nbsp; facebook
+        </span>
+        &nbsp; &nbsp; facebook
       </Button>
       <Button className="btn btn-60 google__btn">
         <span>
           <i className="fab fa-google"></i>
         </span>{' '}
-        &nbsp; &nbsp; &nbsp; &nbsp; google
+        &nbsp; &nbsp; google
       </Button>
     </div>
   )

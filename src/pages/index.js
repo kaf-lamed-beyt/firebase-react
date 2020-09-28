@@ -7,12 +7,11 @@ export default function Index() {
       <section id="head">
         <div className="dodo__base">
           <h2 className="dodo__text">
-            Oh! Welcome to the mystiquenes of all blah blah blah 😄{' '}
+            Oh! 🤫 and Welcome to the mystiquenes of all blah blah blah 😄{' '}
           </h2>
-          <Button className="btn btn-50 btn__secondary get-started">Get started.</Button>
-        </div>
-        <div>
-          <h3>Flex item</h3>
+          <Button className="btn btn-50 btn__secondary get-started">
+            Get started.
+          </Button>
         </div>
       </section>
     </div>

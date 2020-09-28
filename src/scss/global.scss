@@ -24,6 +24,15 @@
 .fa-google {
   color: $google-red;
 }
+
+.link__text__primary {
+  text-decoration: none;
+  color: $primary;
+}
+
+.link__text__underline {
+  color: $primary;
+}
 //
 
 body {
@@ -65,41 +74,38 @@ header {
 // landing page component starts here
 .landing__base {
   #head {
-    background: $primary;
-    height: 714px;
-    display: flex;
-    justify-content: space-around;
+    margin: 8%;
+    // border: $debug;
 
     .dodo__base {
-      width: 70%;
-      margin-top: 10%;
-      padding: 15px;
+      width: 865px;
+      padding: 3%;
+      line-height: 65px;
+
+      .dodo__text {
+        padding: 3%;
+        color: $primary;
+        font-size: $xlg;
+      }
 
       .get-started {
         margin-top: 8%;
-        margin-left: -.2%;
-      }
-
-      .dodo__text {
-        color: $bg-primary;
-        font-size: $xlg;
-        text-align: justify;
+        margin-left: -0.2%;
+        margin: 4%;
       }
     }
   }
+}
 
-  @media only screen and (max-width: 576px) {
-    #head {
-      display: block;
-    }
+
+@media only screen and (max-width: 576px) {
+  #head {
+    width: 500px;
+    border: $debug;
 
     .dodo__base {
       width: 100%;
       border: $debug;
-    }
-
-    .dodo__text {
-      font-size: $lg;
     }
   }
 }
