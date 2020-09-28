@@ -18,11 +18,11 @@
 }
 
 .fa-facebook {
-  color: blue;
+  color: $facebook-blue;
 }
 
 .fa-google {
-  color: red;
+  color: $google-red;
 }
 //
 
@@ -56,6 +56,50 @@ header {
 
     nav ul {
       display: none;
+    }
+  }
+}
+
+// header section ends here
+
+// landing page component starts here
+.landing__base {
+  #head {
+    background: $primary;
+    height: 714px;
+    display: flex;
+    justify-content: space-around;
+
+    .dodo__base {
+      width: 70%;
+      margin-top: 10%;
+      padding: 15px;
+
+      .get-started {
+        margin-top: 8%;
+        margin-left: -.2%;
+      }
+
+      .dodo__text {
+        color: $bg-primary;
+        font-size: $xlg;
+        text-align: justify;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    #head {
+      display: block;
+    }
+
+    .dodo__base {
+      width: 100%;
+      border: $debug;
+    }
+
+    .dodo__text {
+      font-size: $lg;
     }
   }
 }

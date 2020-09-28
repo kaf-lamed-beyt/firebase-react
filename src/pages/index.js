@@ -1,9 +1,20 @@
 import React from 'react'
+import { Button } from '../components/Buttons'
 
 export default function Index() {
   return (
     <div className="landing__base">
-      <h1>Landing</h1>
+      <section id="head">
+        <div className="dodo__base">
+          <h2 className="dodo__text">
+            Oh! Welcome to the mystiquenes of all blah blah blah 😄{' '}
+          </h2>
+          <Button className="btn btn-50 btn__secondary get-started">Get started.</Button>
+        </div>
+        <div>
+          <h3>Flex item</h3>
+        </div>
+      </section>
     </div>
   )
 }

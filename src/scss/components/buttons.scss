@@ -77,6 +77,31 @@
   }
 }
 
+.btn__secondary {
+  background: $pale-green;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary;
+    color: $bg-primary;
+    border: 3px solid $pale-green;
+    transition: all 0.4s ease-in;
+  }
+}
+
+.outline__secondary {
+  border: 2px solid $pale-green;
+  color: $bg-primary;
+  background: $primary;
+
+  &:hover {
+    background: $pale-green;
+    color: $bg-primary;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+  }
+}
+
 // social buttons
 .facebook__btn {
   background: $bg-primary;
@@ -88,25 +113,21 @@
     background: $facebook-blue;
     color: $bg-primary;
     transition: all 0.4s ease-in;
-
-    span {
-      color: $bg-primary;
-    }
   }
 }
 
 .google__btn {
   background: $bg-primary;
-  color: $google;
-  border: 2px solid $google;
+  color: $google-red;
+  border: 2px solid $google-red;
 
   &:hover {
     cursor: pointer;
-    background: $google;
+    background: $google-red;
     color: $bg-primary;
     transition: all 0.4s ease-in;
 
-    span {
+    .fa-google {
       color: $bg-primary;
     }
   }
