@@ -1,0 +1,25 @@
+@import '../variables';
+
+#loader {
+    border: 10px dotted $primary;
+    border-top: 10px dotted $primary;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s ease-in infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

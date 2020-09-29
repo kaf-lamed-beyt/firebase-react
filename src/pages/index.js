@@ -3,10 +3,12 @@ import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
 
 import * as Routes from '../Routes/routes'
+import Loader from '../components/Loader'
 
 export default function Index() {
   return (
     <div className="landing__base">
+      <Loader />
       <section id="head">
         <div className="dodo__base">
           <h2 className="dodo__text">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
-import Input from '../components/Input'
+import Input from '../../Input'
 import SocialAuth from '../components/SocialAuth'
 
 import * as Routes from '../Routes/routes'
