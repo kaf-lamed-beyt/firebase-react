@@ -30,7 +30,7 @@ export default function Login() {
             id="email"
             value={input}
             event={handleChange}
-            default_text="yourname@example.com"
+            default_text="emailaddress@example.com"
           />
           <Input
             type="password"

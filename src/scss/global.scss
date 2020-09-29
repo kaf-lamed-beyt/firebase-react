@@ -75,10 +75,28 @@ header {
 .landing__base {
   #head {
     margin: 8%;
+    width: 865px;
     // border: $debug;
 
+    @media only screen and (max-width: 576px) {
+      border: 1px solid blue;
+      width: 100%;
+      margin: 0;
+
+
+      .dodo__base {
+        padding: 5%;
+        margin-top: 15%;
+
+        .get-started {
+          height: 45px;
+          width: 300px;
+        }
+      }
+    }
+
     .dodo__base {
-      width: 865px;
+      width: 100%;
       padding: 3%;
       line-height: 65px;
 
@@ -86,26 +104,13 @@ header {
         padding: 3%;
         color: $primary;
         font-size: $xlg;
+        padding-bottom: 15%;
       }
 
       .get-started {
-        margin-top: 8%;
-        margin-left: -0.2%;
-        margin: 4%;
+        margin: 3%;
+        height: 45px;
       }
-    }
-  }
-}
-
-
-@media only screen and (max-width: 576px) {
-  #head {
-    width: 500px;
-    border: $debug;
-
-    .dodo__base {
-      width: 100%;
-      border: $debug;
     }
   }
 }

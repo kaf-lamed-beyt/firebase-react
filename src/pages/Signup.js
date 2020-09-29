@@ -38,7 +38,7 @@ export default function SignUp() {
             id="email"
             value={input}
             event={handleChange}
-            default_text="yourname@example.com"
+            default_text="emailaddress@example.com"
           />
           <Input
             type="password"
@@ -63,7 +63,7 @@ export default function SignUp() {
           </Button>
           <p className="alt-text">
             Have an account already?{' '}
-            <Link to={Routes.login} className="link">
+            <Link to={Routes.login} className="link__text__underline">
               sign in
             </Link>
           </p>

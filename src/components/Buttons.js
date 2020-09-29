@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export const Button = ({ className, color, children, event }) => {
+export const Button = ({ className, id, color, children, event }) => {
   return (
     <button className={className} style={{ background: color }} onClick={event}>
       {children}
