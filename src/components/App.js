@@ -11,6 +11,7 @@ import ForgotPassword from '../pages/ForgotPwd'
 import Admin from '../pages/admin/Admin.js'
 
 import * as Routes from '../Routes/routes'
+import Loader from './Loader'
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
       <Router>
         <div className="app__base">
           <Navigation />
+          <Loader />
           {/* routes */}
           <Switch>
             <Route exact path={Routes.landing} component={Index} />

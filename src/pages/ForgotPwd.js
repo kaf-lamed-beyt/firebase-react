@@ -2,12 +2,26 @@ import React from 'react'
 import Input from '../components/Input'
 import { Button } from '../components/Buttons'
 
+import { Link } from 'react-router-dom'
+import * as Routes from '../Routes/routes'
+
 export default function ForgotPassword() {
+  const [input, setInput] = React.useState("")
+
+  const handleChange = event => {
+    setInput(event.target.value)
+  }
+
+  const handleClick = () => {
+    let name = document.querySelector('#email')
+    let email = name.value
+    alert(`thank you ${email}`)
+  }
+
   return (
-    <div className="forgot__base">
-      <h1>Forgot Password</h1>
+    <div className="base">
       <div className="form__base">
-        <h2 className="form__title">Login</h2>
+        <h2 className="form__title">Forgot Password</h2>
         <form className="login form" action="">
           <Input
             type="email"
@@ -19,23 +33,15 @@ export default function ForgotPassword() {
           />
         </form>
         <div className="flex">
-          <Button className="btn btn-25 outline__primary" event={handleClick}>
-            Login
+          <Button className="btn btn-75 outline__primary" event={handleClick}>
+            Reset password
           </Button>
           <p className="alt-text">
-            Don't have an account?{' '}
-            <Link to={Routes.signup} className="link__text__underline">
-              signup
+            <Link to={Routes.login} className="link__text__underline">
+              login
             </Link>
           </p>
         </div>
-        <p className="alt-text">
-          <Link to={Routes.forgotPassword} className="link__text__underline">
-            Forgot password?
-          </Link>
-        </p>
-        <p className="alt-text">Login with facebook or google</p>
-        <SocialAuth className="social__auth flex" />
       </div>
     </div>
   )
