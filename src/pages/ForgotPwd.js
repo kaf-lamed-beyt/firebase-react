@@ -19,7 +19,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <div className="base">
+    <div className="base" data-aos="fade">
       <div className="form__base">
         <h2 className="form__title">Forgot Password</h2>
         <form className="login form" action="">

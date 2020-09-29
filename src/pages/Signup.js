@@ -9,9 +9,12 @@ import * as Routes from '../Routes/routes'
 export default function SignUp() {
   const [input, setInput] = React.useState('')
 
+
   const handleChange = event => {
     setInput(event.target.value)
   }
+
+  
 
   const handleClick = () => {
     let name = document.querySelector('#name')
@@ -20,7 +23,7 @@ export default function SignUp() {
   }
 
   return (
-    <div className="base">
+    <div className="base" data-aos="fade">
       <div className="form__base">
         <h2 className="form__title">Signup</h2>
         <form className="signup form" action="">
