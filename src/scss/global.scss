@@ -33,15 +33,15 @@
 .link__text__underline {
   color: $primary;
 }
-//
-
-body {
-  background: $bg-primary;
-}
 
 h1 {
   text-align: center;
   color: $primary;
+}
+//
+
+body {
+  background: $bg-primary;
 }
 
 // header section starts here
@@ -50,13 +50,21 @@ header {
   justify-content: space-around;
   padding: 10px;
 
+  .brand {
+    h1 {
+      padding-top: 15px;
+      color: $primary;
+    }
+  }
+
   nav ul {
     display: flex;
 
     li {
-      margin: 20px;
+      margin: 15px;
       list-style-type: none;
       text-decoration: none;
+      font-size: $mobile;
     }
   }
 
@@ -79,14 +87,16 @@ header {
     // border: $debug;
 
     @media only screen and (max-width: 576px) {
-      border: 1px solid blue;
       width: 100%;
       margin: 0;
-
 
       .dodo__base {
         padding: 5%;
         margin-top: 15%;
+
+        .dodo__text {
+          font-size: $lg;
+        }
 
         .get-started {
           height: 45px;

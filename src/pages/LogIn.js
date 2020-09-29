@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../../Input'
+import Input from '../components/Input'
 import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
 import SocialAuth from '../components/SocialAuth'
@@ -52,6 +52,11 @@ export default function Login() {
             </Link>
           </p>
         </div>
+        <p className="alt-text">
+          <Link to={Routes.forgotPassword} className="link__text__underline">
+            Forgot password?
+          </Link>
+        </p>
         <p className="alt-text">Login with facebook or google</p>
         <SocialAuth className="social__auth flex" />
       </div>

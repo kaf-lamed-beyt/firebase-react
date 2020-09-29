@@ -4,7 +4,7 @@
   width: 120px;
   height: 40px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
   font-size: $md;
   margin: 15px;
@@ -107,6 +107,7 @@
   background: $bg-primary;
   color: $facebook-blue;
   border: 2px solid $facebook-blue;
+  outline-color: $facebook-blue;
 
   &:hover {
     cursor: pointer;
@@ -120,6 +121,7 @@
   background: $bg-primary;
   color: $google-red;
   border: 2px solid $google-red;
+  outline-color: $google-red;
 
   &:hover {
     cursor: pointer;
