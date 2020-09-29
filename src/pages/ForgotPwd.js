@@ -34,7 +34,7 @@ export default function ForgotPassword() {
         </form>
         <div className="flex">
           <Button className="btn btn-75 outline__primary" event={handleClick}>
-            Reset password
+            Reset
           </Button>
           <p className="alt-text">
             <Link to={Routes.login} className="link__text__underline">
