@@ -1,11 +1,8 @@
 import React from 'react'
 
 const Loader = () => {
-    const ready = document.readyState
-
     document.onreadystatechange = () => {
-        if (ready !== "complete") {
-            console.log(ready)
+        if (document.readyState !== "complete") {
             document.querySelector("body").style.visibility = "hidden"
             document.querySelector("#loader").style.visibility = "visible"
         } else {
