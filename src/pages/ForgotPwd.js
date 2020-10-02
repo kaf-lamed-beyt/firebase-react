@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import * as Routes from '../Routes/routes'
 
 export default function ForgotPassword() {
-  const [input, setInput] = React.useState("")
+  const [input, setInput] = React.useState('')
 
   const handleChange = event => {
     setInput(event.target.value)

@@ -9,12 +9,9 @@ import * as Routes from '../Routes/routes'
 export default function SignUp() {
   const [input, setInput] = React.useState('')
 
-
   const handleChange = event => {
     setInput(event.target.value)
   }
-
-  
 
   const handleClick = () => {
     let name = document.querySelector('#name')

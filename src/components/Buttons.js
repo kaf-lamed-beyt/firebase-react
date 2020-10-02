@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 
 export const Button = ({ className, id, color, children, event, animate }) => {
   return (
-    <button className={className} style={{ background: color }} onClick={event} data-aos={animate}>
+    <button
+      className={className}
+      style={{ background: color }}
+      onClick={event}
+      data-aos={animate}
+    >
       {children}
     </button>
   )

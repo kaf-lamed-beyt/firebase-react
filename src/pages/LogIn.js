@@ -23,7 +23,7 @@ export default function Login() {
     <div className="base login__base" data-aos="fade">
       <div className="form__base">
         <h2 className="form__title">Log In</h2>
-        <form className="login form" action="" >
+        <form className="login form" action="">
           <Input
             type="email"
             name="email"

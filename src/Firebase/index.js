@@ -1,6 +1,6 @@
 // this folder will export
-//  all necessary functionalities 
-// (Firebase class, Firebase context 
+//  all necessary functionalities
+// (Firebase class, Firebase context
 // for Consumer and Provider components)
 
 import FirebaseContext from './context'

@@ -16,33 +16,32 @@ class Firebase {
 
         // add app authentication api
         this.auth = app.auth()
-
-        // setting up the authentication api
+    }
+    // setting up the authentication api
         
-        // create new user 
-        const createUser = (email, password) => {
-            this.auth.createUserWithEmailAndPassword(email, password)
-        }
+    // create new user 
+    createUser = (email, password) => {
+        this.auth.createUserWithEmailAndPassword(email, password)
+    }
 
-        // authenticate user with email and password
-        const loginWithEmailAndPassword = (email, password) => {
-            this.auth.signInWithEmailAndPassword(email, password)
-        }
+    // authenticate user with email and password
+    loginWithEmailAndPassword = (email, password) => {
+        this.auth.signInWithEmailAndPassword(email, password)
+    }
 
-        // logout authenticated user
-        const logout = () => {
-            this.auth.signOut()
-        }
+    // logout authenticated user
+    logout = () => {
+        this.auth.signOut()
+    }
 
-        // reset password for authenticated user
-        const resetPassword = (email) => {
-            this.auth.sendPasswordResetEmail(email)
-        }
+    // reset password for authenticated user
+    resetPassword = (email) => {
+        this.auth.sendPasswordResetEmail(email)
+    }
 
-        // change password (only authenticated users)
-        const changePassword = (password) => {
-            this.auth.currentUser.updatePassword(password)
-        }
+    // change password (only authenticated users)
+    changePassword = (password) => {
+        this.auth.currentUser.updatePassword(password)
     }
 }
 

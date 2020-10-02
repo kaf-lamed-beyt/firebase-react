@@ -3,7 +3,6 @@ import { Button } from '../components/Buttons'
 import { Link } from 'react-router-dom'
 import * as Routes from '../Routes/routes'
 
-
 export default function Index() {
   return (
     <div className="landing__base">
@@ -13,7 +12,10 @@ export default function Index() {
             Oh! 🤫 and Welcome to the mystiquenes of all blah blah blah 😄{' '}
           </h2>
           <Link to={Routes.signup}>
-            <Button className="btn btn-50 btn__secondary get-started" animate="ease-in">
+            <Button
+              className="btn btn-50 btn__secondary get-started"
+              animate="ease-in"
+            >
               Get started.
             </Button>
           </Link>
